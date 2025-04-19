@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./style/styles.css">
+<body>
+    <div class="container">
+        <header>
+            <h1>Dark Tales III</h1>
+            <nav>
+                <button class="dropdown-button">Menú</button>
+                <div class="dropdown-menu">
+                <a href="index.html">Inicio</a>
+                <a href="lore.html">Lore</a>
+                <a href="galery.html">Galería</a>
+                <a href="about-me.html">Sobre mí</a>
+                </div>
+            </nav>
+        </header>
+
+        <h1>Formulario de Contacto</h1>
+        <div class="form-container">
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pais">País</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona un país</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="México">México</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Perú">Perú</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Dark Tales III©. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

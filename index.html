@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¡Bienvenido/a a Dark Tales III!</title>
+  <link rel="stylesheet" href="./style/styles.css">
+  <link rel="icon" href="./img/bonfire.png" type="image/png">
+</head>
+<body>
+  <div class="about-container">
+    <header>
+      <h1>Dark Tales III</h1>
+      <nav>
+        <button class="dropdown-button">Menú</button>
+        <div class="dropdown-menu">
+          <a href="lore.html">Lore</a>
+          <a href="galery.html">Galería</a>
+          <a href="about-me.html">Sobre mí</a>
+          <a href="contact.html">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio">
+        <h2>Bienvenido/a a Dark Tales III</h2>
+        <p>Explorá el oscuro y fascinante mundo de Dark Souls III y sumérgete de lleno en su historia, personajes y secretos ocultos.</p>
+
+        <div class="carrusel">
+          <div class="carrusel-slides" id="slides">
+            <figure class="slide">
+              <video controls id="video-slide">
+                <source src="DARK SOULS 3 - Opening Cinematic.mp4" type="video/mp4">
+              </video>
+              <figcaption></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="./img/visions-of-rest.webp" alt="Hoguera del Santuario del Enlace.">
+              <figcaption>Visiones de descanso. Las hogueras son nuestras mejores amigas.</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="./img/dark_souls_3_vordt_of_the_boreal.jpg" alt="Vordt del Valle Boreal en batalla.">
+              <figcaption>Difíciles pruebas y jefes poderosos intentarán poner fin a la misión del Latente.</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="./img/lords-of-cinder.webp" alt="Los Señores de Ceniza">
+              <figcaption>El Latente heredará un poder inconmensurable al derrotar a los Señores de Ceniza.</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="./img/soulofciner.jpg" alt="El Alma de Ceniza.">
+              <figcaption>El último Guardián de la Llama será la prueba final para el Campeón de Ceniza.</figcaption>
+            </figure>
+          </div>
+          <button class="flecha izquierda" onclick="cambiarSlide(-1)">&#10094;</button>
+          <button class="flecha derecha" onclick="cambiarSlide(1)">&#10095;</button>
+        </div>
+      </section>
+
+      <section id="galeria">
+        <h2>Dark Souls: Comienzos y Precursores</h2>
+        <p>Una aventura que comienza en el legendario reino de Lordran, aquel que resguardaba la imponente Anor Londo, ciudad de los dioses. Reino donde la profecía del no-muerto elegido dio nacimiento a una de las cruzadas más emocionantes, misteriosas y oscuras de todos los tiempos. Su historia comienza con el advenimiento de la Era de Fuego, luego de que los Dragones Eternos fueran derrotados por los primeros cuatro Señores: Gwyn, el primer Señor de la Llama; el nigromante Nito, Rey del Cementerio; la Bruja de Izalith, madre de las Hijas del Caos; y el Pigmeo Furtivo quien, al morir a manos del No-Muerto Elegido, hereda su Alma Oscura a sus descendientes, señores de la Ciudad Anillada. Es reemplazado con Seath el Descamado, el Traidor, dragón ciego que se aliara con Gwyn y sus compañeros para destruir la estirpe de los Dragones Eternos.</p>
+        <p>Una aventura que continúa en la lejana tierra de Drangleic, antaño próspera y rica, pero caída en decadencia y condenada por una serie de desafortunados eventos. La propagación de la Maldición de los No Muertos y la guerra iniciada cuando "los Gigantes cruzaron el mar" fueron los principales desencadenantes de tan estrepitosa caída. Gobernada en sus días de gloria por el Rey Vendrick, un rey justo y honorable, fue llevada a la prosperidad con ayuda de los caballeros de Alto Rango, seleccionados por el propio Vendrick. Pero lamentablemente, al propagarse la Maldición, el rey sucumbió ante la misma maldición, no pudo soportar el peso de ser monarca y dejó el reino a manos de su esposa, quien afortunadamente no había sido afectada. Vendrick eventualmente se convierte en Hueco, vagando sin rumbo y por la eternidad en la Cámara Real, donde será encontrado por el Portador de la Maldición.</p>
+        <p>Pero todo esto es cosa pasada, apenas un pequeño vistazo a los eventos que representan el inicio de esta tanto atrapante como escalofriante historia que es la de Dark Souls.</p>
+        <img class="index-img" src="./img/Dark-souls.webp" alt="El Campeón de Ceniza.">
+      </section>
+
+    <footer>
+      <p>&copy; 2025 Dark Tales III©. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <script>
+    let indiceActual = 0;
+    const slides = document.getElementById("slides");
+    const totalSlides = slides.children.length;
+    const videoSlide = document.getElementById("video-slide");
+
+    let intervaloCarrusel;
+
+    function cambiarSlide(direccion) {
+      if (!videoSlide.paused) {
+        return;
+      }
+      indiceActual += direccion;
+      if (indiceActual < 0) indiceActual = totalSlides - 1;
+      if (indiceActual >= totalSlides) indiceActual = 0;
+
+      slides.style.transform = `translateX(-${indiceActual * 20}%)`;
+    }
+
+    function iniciarCarrusel() {
+      intervaloCarrusel = setInterval(() => {
+        if (!videoSlide.paused) {
+          return;
+        }
+        cambiarSlide(1);
+      }, 5000);
+    }
+
+    videoSlide.addEventListener('play', () => {
+      clearInterval(intervaloCarrusel);
+    });
+
+    videoSlide.addEventListener('pause', () => {
+      iniciarCarrusel();
+    });
+
+    iniciarCarrusel();
+  </script>
+</body>
+</html>
