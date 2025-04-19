@@ -189,6 +189,8 @@
             right: 10px;
             }
 
+            /* Formulario de contacto */
+
             .form-container {
                 font-family: "optimusprinceps", serif;
                 font-size: auto;
@@ -251,6 +253,8 @@
                 background-color: rgba(0, 0, 0, 1);
             }
 
+            /* Estilo de las Imágenes */
+
             .galery-img {
                 width: 400px;
                 height:auto;
@@ -285,6 +289,8 @@
                 border-radius: 5px;
                 margin-left: 100px;
             }
+
+            /* Botón bottom para volver al comienzo de la página */
 
             .boton-volver {
                 position: fixed;
@@ -337,6 +343,8 @@
                 box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
             }
 
+            /* Figcaption (descripción en las imágenes)*/
+
             figure {
                 margin: 0;
                 text-align: center;
@@ -346,6 +354,8 @@
                 font-style: italic;
                 color: #ccc;
             }
+
+            /* Menú desplegable */
 
             nav {
                 position: relative;
