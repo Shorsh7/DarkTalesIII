@@ -1,8 +1,18 @@
-        /* Fuente */
+        /* Fuentes */
 
         @font-face {
             font-family: "optimusprinceps";
             src: url(../font/optimusprinceps/OptimusPrinceps.ttf);
+        }
+
+        @font-face {
+            font-family: "enchantedland";
+            src: url(../font/enchanted_land/enchantedland.otf);
+        }
+
+        @font-face {
+            font-family: "pirataone";
+            src: url(../font/pirata_one/PirataOne.ttf);
         }
 
         /* General */
@@ -102,6 +112,12 @@
 
             p {
                 text-align: justify;
+                font-family: 'pirataone';
+                font-size: 22px;
+            }
+
+            .p1 {
+                text-align: center;
             }
 
         a {
@@ -401,4 +417,10 @@
         
             nav:hover .dropdown-menu {
                 display: block;
+            }
+
+            li {
+                list-style-type: none;
+                text-align: center;
+                margin-right: 30px;
             }
