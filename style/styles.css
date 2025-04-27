@@ -21,7 +21,7 @@
         margin: 0;
         padding: 0;
         background-color: #111;
-        background-image: url(../img/Irithyll_del_Valle_Boreal.webp);
+        background-image: url(../img/Irithyll_del_Valle_Boreal.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -356,6 +356,7 @@
                 border-radius: 8px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
+                object-fit: cover;
             }
 
             .galery-img:hover {
@@ -372,6 +373,7 @@
             figcaption {
                 margin-top: 8px;
                 font-style: italic;
+                font-size: 0.9rem;
                 color: #ccc;
             }
 
