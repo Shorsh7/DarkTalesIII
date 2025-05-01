@@ -114,6 +114,7 @@
                 text-align: justify;
                 font-family: 'pirataone';
                 font-size: 22px;
+                color: #c2bebe;
             }
 
             .p1 {
@@ -122,6 +123,8 @@
 
             .p2 {
                 font-size: 20px;
+                color: #f2f2f2;
+                text-align: center;
             }
 
         a {
@@ -353,6 +356,7 @@
             .galery-img {
                 width: 100%;
                 height: 90%;
+                border: solid, #c2bebe; 
                 border-radius: 8px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -429,4 +433,63 @@
                 list-style-type: none;
                 text-align: center;
                 margin-right: 30px;
+            }
+
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1000;
+                padding-top: 60px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0,0,0,0.7);
+            }
+            
+            .modal-content {
+                display: block;
+                margin: auto;
+                margin-top: 60px;
+                max-width: 80%;
+                max-height: 80vh;
+                border: 5px, solid, #f2f2f2;
+                border-radius: 10px;
+                box-shadow: 0 0 30px rgba(250, 250, 250, 0.75);
+                background-color: #111;
+            }
+            
+            #caption {
+                text-align: center;
+                color: #ccc;
+                margin-top: 15px;
+                font-size: 18px;
+                font-style: italic;
+                font-family: "optimusprinceps", serif;
+            }
+            
+            .close, .prev, .next {
+                cursor: pointer;
+                color: white;
+                font-size: 2em;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                user-select: none;
+                padding: 16px;
+            }
+            
+            .close {
+                top: 15px;
+                right: 35px;
+                font-size: 3em;
+                transform: none;
+            }
+            
+            .prev { left: 10px; }
+            .next { right: 10px; }
+            
+            @media (max-width: 600px) {
+                .close, .prev, .next { font-size: 1.5em; }
             }

@@ -6,6 +6,14 @@
     <title>Galería de Imágenes</title>
     <link rel="stylesheet" href="../style/styles.css">
 </head>
+    <!-- Modal Lightbox -->
+<div id="lightboxModal" class="modal">
+    <span class="close">&times;</span>
+    <a class="prev">&#10094;</a>
+    <img class="modal-content" id="imgModal">
+    <div id="caption"></div>
+    <a class="next">&#10095;</a>
+</div>  
 <body>
     <div id="top"></div>
         <header>
@@ -199,5 +207,42 @@
         <img src="../img/bonfire-img.png" alt="Volver al comienzo" class="icono">
         ↑
     </a>
+    <script>
+        const modal = document.getElementById("lightboxModal");
+        const modalImg = document.getElementById("imgModal");
+        const captionText = document.getElementById("caption");
+        const images = document.querySelectorAll(".galery-img");
+        let currentIndex = 0;
+    
+        function openModal(index) {
+        currentIndex = index;
+        modal.style.display = "block";
+        modalImg.src = images[index].src;
+        captionText.innerHTML = images[index].alt;
+        }
+    
+        images.forEach((img, index) => {
+        img.addEventListener("click", () => openModal(index));
+        });
+    
+        document.querySelector(".close").onclick = () => modal.style.display = "none";
+    
+        document.querySelector(".prev").onclick = () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        modalImg.src = images[currentIndex].src;
+        captionText.innerHTML = images[currentIndex].alt;
+        };
+    
+        document.querySelector(".next").onclick = () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        modalImg.src = images[currentIndex].src;
+        captionText.innerHTML = images[currentIndex].alt;
+        };
+    
+        // Para cerrar Modal al hacer click fuera de la imagen
+        modal.onclick = function (e) {
+        if (e.target === modal) modal.style.display = "none";
+        };
+    </script>      
 </body>
 </html>
