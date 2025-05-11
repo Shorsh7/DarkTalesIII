@@ -32,7 +32,7 @@
         }
 
         .about-container {
-            max-width: 900px;
+            max-width: 50%;
             margin: 50px auto;
             padding: 20px;
             border-radius: 12px;
@@ -382,7 +382,7 @@
                 resize: vertical;
                 height: 150px;
             }
-    
+
             .form-group input:focus,
             .form-group select:focus,
             .form-group textarea:focus {
@@ -618,7 +618,99 @@
             
             .prev { left: 10px; }
             .next { right: 10px; }
+
+            img:hover,
+            select:hover,
+            a:hover,
+            button:hover {
+                cursor: url(../img/sword-icon.png), auto;
+            }
+
             
             @media (max-width: 600px) {
                 .close, .prev, .next { font-size: 1.5em; }
             }
+
+            /* Tablets (hasta 1024px) */
+            @media (max-width: 1024px) {
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .dropdown-button {
+                font-size: 1rem;
+            }
+
+            #inicio h2 {
+                font-size: 1.5rem;
+            }
+
+            .carrusel-slides {
+                display: block;
+            }
+
+            .slide {
+                width: 100%;
+            }
+
+            /* Galería con 2 columnas en tablet */
+            #galeria {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                width: calc(50% - 1rem);
+            }
+            }
+
+            /* Móviles (hasta 767px) */
+
+            @media (max-width: 767px) {
+            /* Menú desplegable en móvil */
+            .dropdown-row {
+                width: 100%;
+            }
+
+            .dropdown-menu {
+                width: 100%;
+                top: 50px;
+                right: 0;
+            }
+
+            /* El título más pequeño */
+            .title {
+                font-size: 2rem;
+            }
+
+            /* Carrusel */
+            .carrusel {
+                padding: 10px;
+            }
+
+            /* La galería con 1 columna en móvil */
+            .galeria {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            /* El footer y sus íconos más pequeños */
+            footer {
+                padding: 10px;
+            }
+
+            .footer-socials a {
+                margin: 5px;
+                
+            }
+
+            .footer-img {
+                max-width: 25px;
+                max-height: 25px;
+                align-items: center;
+            }
+            
+            .p2 {
+                font-size: 1.2rem;
+            }
+            
+        }
