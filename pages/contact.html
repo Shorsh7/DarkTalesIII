@@ -78,5 +78,26 @@
             <p class="p2">&copy; 2025 Dark Tales III. Todos los derechos reservados.</p>
         </footer>
     </div>
+    <div id="toast" class="toast hidden">
+        <img src="../img/movingbonfire.gif" alt="Hoguera giratoria" class="toast-img">
+        <span>¡Mensaje enviado con éxito!</span>
+    </div>
+
+    <!-- Script para mostrar el toast -->
+    <script>
+        const form = document.querySelector('form');
+        const toast = document.getElementById('toast');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            toast.classList.remove('hidden');
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+                toast.classList.add('hidden');
+            }, 3000);
+        });
+    </script>
 </body>
 </html>

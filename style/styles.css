@@ -591,6 +591,46 @@
                 margin-right: 30px;
             }
 
+            /* Toast message */
+
+            .toast {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                position: fixed;
+                top: 30px;
+                right: 30px;
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #f8f8f8;
+                padding: 16px 24px;
+                border-radius: 10px;
+                font-family: 'optimusprinceps';
+                font-size: 1em;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.5s ease-in-out;
+                z-index: 1000;
+                box-shadow: 0 0 10px #000;
+            }
+
+            .toast-img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+            .toast.show {
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            .toast.hidden {
+                display: none;
+            }
+
+            /* Lighbox */
+
             .modal {
                 display: none;
                 position: fixed;
@@ -656,61 +696,6 @@
             
             @media (max-width: 600px) {
                 .close, .prev, .next { font-size: 1.5em; }
-            }
-
-            /* Tablets (hasta 1024px) */
-            @media (max-width: 1024px) and (min-width: 768px) {
-            
-            .title {
-                font-size: 2.5rem;
-            }
-
-            .dropdown-button {
-                font-size: 1rem;
-            }
-
-            #inicio h2 {
-                font-size: 1.5rem;
-            }
-
-            .carrusel-slides {
-                display: block;
-            }
-
-            .slide {
-                width: 100%;
-            }
-
-            /* Galería con 2 columnas en tablet */
-            #galeria {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
-                width: calc(50% - 1rem);
-            }
-            }
-
-            /* Formulario Tablets*/
-
-            .container {
-                max-width: 90%;
-                padding: 20px;
-            }
-
-            .form-container {
-                padding: 25px;
-            }
-
-            .form-group input,
-            .form-group select,
-            .form-group textarea,
-            .form-group button {
-                width: 100%;
-                font-size: 15px;
-            }
-
-            .form-group label {
-                font-size: 15px;
             }
 
             /* Móviles (hasta 767px) */
