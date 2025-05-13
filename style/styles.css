@@ -1,4 +1,4 @@
-        /* Fuentes */
+        /* Fonts */
         
         @font-face {
             font-family: "optimusprinceps";
@@ -62,7 +62,6 @@
             padding: 20px;
             margin-top: 5%;
             margin-bottom: 5%;
-            background-color: rgba(0, 0, 0, 0.75);
             border-radius: 12px;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
         }
@@ -97,7 +96,7 @@
             padding: 20px;
         }
         
-          /* H1 ocupa toda la fila 1, centrado entre columnas 2 y 3 */
+          /* H1 crosses the whole row 1, centered between columns 2 and 3 */
         .title {
             grid-column: 2/5;
             grid-row: 1;
@@ -109,7 +108,7 @@
             font-size: 3.5em;
         }
         
-          /* Dropdown nav ocupa la fila 2 entre columnas 2 y 3 */
+          /* Dropdown nav between rows 2 and 3 */
         .dropdown-row {
             grid-column: 3;
             grid-row: 2;
@@ -119,7 +118,7 @@
             margin-bottom: -30px;
         }
         
-          /* Botón del menú */
+          /* Menu's button */
         .dropdown-button {
             padding: 10px 20px;
             background-color: #444;
@@ -129,7 +128,7 @@
             cursor: pointer;
         }
         
-          /* Menú desplegable oculto */
+          /* Hidden dropdown menu */
         .dropdown-menu {
             display: none;
             position: absolute;
@@ -143,12 +142,12 @@
             z-index: 1000;
         }
         
-          /* Mostrar el menú al hacer hover */
+          /* Show menu while hovering */
         .dropdown-row:hover .dropdown-menu {
             display: block;
         }
         
-          /* Estilo del menú */
+          /* Menu's style */
         .dropdown-menu ul {
             list-style: none;
             margin: 0;
@@ -286,7 +285,7 @@
             margin-bottom: 40px;
             }
 
-            /* Carrusel */
+            /* Carousel */
 
         .carrusel {
             position: relative;
@@ -318,7 +317,7 @@
             margin-top: 10px;
         }
 
-        /* Flechas controladoras del carrusel */
+        /* Carousel's arrows */
 
         .flecha {
             position: absolute;
@@ -362,7 +361,7 @@
             right: 10px;
             }
 
-            /* Formulario de contacto */
+            /* Contact form */
 
         .form-container {
             width: 100%;
@@ -375,7 +374,7 @@
             margin-left: 10%;
         }
 
-        /* Estilo de cada campo */
+        /* Textbox's styles */
         .form-group {
             margin-bottom: 20px;
         }
@@ -412,7 +411,7 @@
             outline: none;
         }
 
-        /* Botón */
+        /* From button */
         .form-group button {
             font-family: "optimusprinceps", serif;
             background-color: rgba(0, 0, 0, 0.4);
@@ -432,7 +431,7 @@
             border-radius: 12px;
         }
 
-            /* Estilo de las Imágenes */
+            /* Images' style */
 
             .galery-img {
                 width: 400px;
@@ -469,7 +468,7 @@
                 margin-left: 100px;
             }
 
-            /* Botón bottom para volver al comienzo de la página */
+            /* Bottom button to go all the way up */
 
             .boton-volver {
                 position: fixed;
@@ -498,7 +497,7 @@
                 height: 20px;
             }
 
-            /* Estilo de Galería de Imágenes*/
+            /* Gallery's style */
 
             .galeria {
                 display: grid;
@@ -524,7 +523,7 @@
                 box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
             }
 
-            /* Figcaption (descripción en las imágenes)*/
+            /* Figcaption (images' description)*/
 
             figure {
                 margin: 0;
@@ -537,7 +536,7 @@
                 color: #ccc;
             }
 
-            /* Menú desplegable */
+            /* Dropdown menu */
 
             nav {
                 position: relative;
@@ -721,10 +720,10 @@
                 .close, .prev, .next { font-size: 1.5em; }
             }
 
-            /* Móviles (hasta 767px) */
+            /* Mobile (up to 767px) */
 
             @media (max-width: 767px) {
-            /* Menú desplegable en móvil */
+            /* Mobile's dropdown menu */
             .dropdown-row {
                 width: 100%;
             }
@@ -735,24 +734,24 @@
                 right: 0;
             }
 
-            /* El título más pequeño */
+            /* Smaller title */
             .title {
                 font-size: 2rem;
             }
 
-            /* Carrusel */
+            /* Carousel */
             .carrusel {
                 padding: 10px;
             }
 
-            /* La galería con 1 columna en móvil */
+            /* 1 column gallery on mobile */
             .galeria {
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 15px;
             }
 
-            /* El footer y sus íconos más pequeños */
+            /* Smaller footer and icons */
             footer {
                 padding: 10px;
             }
@@ -774,7 +773,7 @@
             
         }
 
-            /* Formulario móvil*/
+            /* Mobile form*/
 
             .container {
             max-width: 100%;
