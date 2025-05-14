@@ -644,8 +644,13 @@
             .toast.show {
                 opacity: 1;
                 pointer-events: auto;
-                animation: fadeIn 0.5s forwards;
+                animation: fadeIn 1s forwards;
             }
+
+            .toast.fade-out {
+                animation: fadeOut 1s forwards;
+                pointer-events: none;
+}
 
             .toast.hidden {
                 display: none;

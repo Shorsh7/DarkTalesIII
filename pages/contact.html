@@ -80,7 +80,7 @@
     </div>
     <div id="toast" class="toast hidden">
         <img src="../img/movingbonfire.gif" alt="Hoguera giratoria" class="toast-img">
-        <span>¡Mensaje enviado con éxito!</span>
+        <span>¡Mensaje enviado!</span>
     </div>
 
     <!-- Script para mostrar el toast -->
@@ -90,13 +90,18 @@
 
         form.addEventListener('submit', function(event) {
             event.preventDefault();
-            toast.classList.remove('hidden');
+            toast.classList.remove('hidden', 'fade-out');
             toast.classList.add('show');
 
+                setTimeout(() => {
+            toast.classList.remove('show');
+            toast.classList.add('fade-out');
+
             setTimeout(() => {
-                toast.classList.remove('show');
                 toast.classList.add('hidden');
-            }, 3000);
+                toast.classList.remove('fade-out');
+            }, 1000);
+        }, 10000);
         });
     </script>
 </body>
