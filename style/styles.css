@@ -722,7 +722,7 @@
 
             /* Mobile (up to 767px) */
 
-            @media (max-width: 767px) {
+            @media (min-width: 375px) and (max-width: 767px) {
             /* Mobile's dropdown menu */
             .dropdown-row {
                 width: 100%;
