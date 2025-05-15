@@ -163,6 +163,25 @@
             text-decoration: none;
         }
 
+        .h2-header {
+            grid-column: 2/5;
+            grid-row: 3;
+            position: relative;
+            justify-self: center;
+            margin-top: 50px ;
+            margin-bottom: -30px;
+            font-size: 2em ;
+            font-family: 'optimusprinceps', serif;
+            text-align: center;
+            color: #fff;
+            text-shadow: 
+            0 0 10px rgba(255, 255, 255, 0.7),
+            0 0 20px rgba(255, 255, 255, 0.5),
+            0 0 30px rgba(255, 255, 255, 0.3),
+            0 0 40px rgba(255, 255, 255, 0.2);
+            transition: text-shadow 0.5s ease-in-out;
+        }
+
         .h3-header {
             grid-column: 2/5;
             grid-row: 3;
@@ -217,64 +236,65 @@
         }
 
         h1 {
-                font-family: 'optimusprinceps', serif;
-                text-align: center;
-                margin-bottom: 30px;
-                font-size: 50px;
-                color: #fff;
+            font-family: 'optimusprinceps', serif;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 50px;
+            color: #fff;
             }
 
-            h2 {
-                font-family: 'optimusprinceps', serif;
-                text-align: center;
-                margin-bottom: 30px;
-                font-size: 2em;
-                color: #fff;
-                text-shadow: 
+        h2 {
+            font-family: 'optimusprinceps', serif;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #fff;
+            text-shadow: 
             0 0 10px rgba(255, 255, 255, 0.7),
             0 0 20px rgba(255, 255, 255, 0.5),
             0 0 30px rgba(255, 255, 255, 0.3),
             0 0 40px rgba(255, 255, 255, 0.2);
-        transition: text-shadow 0.5s ease-in-out;
-            }
+            transition: text-shadow 0.5s ease-in-out;
+        }
+        
 
-            h3 {
-                font-family: 'optimusprinceps', serif;
-                text-align: center;
-                font-size: 25px;
-            }
+        h3 {
+            font-family: 'optimusprinceps', serif;
+            text-align: center;
+            font-size: 25px;
+        }
 
-            h4 {
-                font-family: 'optimusprinceps', serif;
-                font-size: 1.2em;
-                text-align: center;
-            }
+        h4 {
+            font-family: 'optimusprinceps', serif;
+            font-size: 1.2em;
+            text-align: center;
+        }
 
-            h1:hover {
-                text-shadow: 
-                    0 0 20px rgba(255, 255, 255, 0.7),
-                    0 0 30px rgba(255, 255, 255, 0.5),
-                    0 0 40px rgba(255, 255, 255, 0.3),
-                    0 0 50px rgba(255, 255, 255, 0.2);
-            }
+        h1:hover {
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.7),
+                0 0 30px rgba(255, 255, 255, 0.5),
+                0 0 40px rgba(255, 255, 255, 0.3),
+                0 0 50px rgba(255, 255, 255, 0.2);
+        }
 
-            p {
-                text-align: justify;
-                font-family: 'pirataone';
-                font-size: 1.25em;
-                color: #c2bebe;
-            }
+        p {
+            text-align: justify;
+            font-family: 'pirataone';
+            font-size: 1.25em;
+            color: #c2bebe;
+        }
 
-            .p1 {
-                text-align: center;
-            }
+        .p1 {
+            text-align: center;
+        }
 
-            .p2 {
-                font-size: 1.2em;
-                color: #f2f2f2;
-                text-align: center;
-                grid-column: 1/5;
-            }
+        .p2 {
+            font-size: 1.2em;
+            color: #f2f2f2;
+            text-align: center;
+            grid-column: 1/5;
+        }
 
         a {
             color: #87cefa;
@@ -287,79 +307,72 @@
 
             /* Carousel */
 
-        .carrusel {
+        #demo.carousel {
             position: relative;
             width: 100%;
             max-width: 600px;
             margin: 0 auto 40px;
             overflow: hidden;
-            }
+        }
 
-        .carrusel-slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            width: 500%;
-        }
-    
-        .slide {
-            width: 20%;
-            box-sizing: border-box;
-            padding: 10px;
-        }
-    
-        .slide img, .slide video {
-            max-width: 100%;
-            height: auto;
+        /* Slides */
+        .carousel-inner {
             border-radius: 8px;
         }
 
-        .slide figcaption {
-            margin-top: 10px;
+        .carousel-item img,
+        .carousel-item video {
+            max-width: 100%;
+            max-height: auto;
+            border-radius: 8px;
+            border: 2px solid, #6e6b6b;
         }
 
-        /* Carousel's arrows */
+        /* Indicadores (puntos inferiores) */
+        .carousel-indicators li {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
 
-        .flecha {
-            position: absolute;
+        .carousel-indicators .active {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Flechas de navegación */
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: auto;
+            height: 50px;
             top: 50%;
-            transform: translateY(-50%) scale(0.8);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            font-size: 2rem;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-            z-index: 10;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            filter: none;
             opacity: 0;
             pointer-events: none;
-            filter: blur(2px);
-            transition:
-            opacity 0.3s ease,
-            transform 0.3s ease,
-            background-color 0.3s,
-            filter 0.3s ease;
-            }
+            transition: opacity 0.3s ease;
+        }
 
-        .carrusel:hover .flecha {
+        #demo.carousel:hover .carousel-control-prev,
+        #demo.carousel:hover .carousel-control-next {
             opacity: 1;
             pointer-events: auto;
-            transform: translateY(-50%) scale(1);
             filter: blur(0);
-            }
+            transform: translateY(-50%) scale(1);
+        }
 
-        .flecha:hover {
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
             background-color: rgba(255, 255, 255, 0.3);
             transform: translateY(-50%) scale(1.1);
-            }
+        }
 
-        .flecha.izquierda {
-            left: 10px;
-            }
-
-        .flecha.derecha {
-            right: 10px;
-            }
+        /* Íconos de flecha */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-size: 60% 60%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
             /* Contact form */
 

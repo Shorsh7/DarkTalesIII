@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>¡Bienvenido/a a Dark Tales III!</title>
+  <title>Dark Tales III &copy;</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style/styles.css">
   <link rel="icon" href="./img/bonfire.png" type="image/png">
 </head>
-<body>
-  <div class="about-container">
-    <header>
+    <header class="container">
       <h1 class="title">Dark Tales III</h1>
       <nav class="dropdown-row">
         <button class="dropdown-button">Menú</button>
@@ -23,42 +22,56 @@
           </ul>
         </div>
       </nav>
+      <h2 class="h2-header">Bienvenido/a a Dark Tales III</h2>
     </header>
-
+<body>
+    <div class="about-container">
     <main>
       <section id="inicio">
-        <h2>Bienvenido/a a Dark Tales III</h2>
-        <p class="p1">Explorá el oscuro y fascinante mundo de Dark Souls III y sumérgete de lleno en su historia, personajes y secretos ocultos.</p>
 
-        <div class="carrusel">
-          <div class="carrusel-slides" id="slides">
-            <figure class="slide">
-              <video controls id="video-slide">
-                <source src="./img/DARK SOULS 3 - Opening Cinematic.mp4" type="video/mp4">
-              </video>
-              <figcaption></figcaption>
-            </figure>
-            <figure class="slide">
-              <img src="./img/visions-of-rest.webp" alt="Hoguera del Santuario del Enlace.">
-              <figcaption>Visiones de descanso. Las hogueras son nuestras mejores amigas.</figcaption>
-            </figure>
-            <figure class="slide">
-              <img src="./img/dark_souls_3_vordt_of_the_boreal.jpg" alt="Vordt del Valle Boreal en batalla.">
-              <figcaption>Difíciles pruebas y jefes poderosos intentarán poner fin a la misión del Latente.</figcaption>
-            </figure>
-            <figure class="slide">
-              <img src="./img/lords-of-cinder.webp" alt="Los Señores de Ceniza">
-              <figcaption>El Latente heredará un poder inconmensurable al derrotar a los Señores de Ceniza.</figcaption>
-            </figure>
-            <figure class="slide">
-              <img src="./img/soulofciner.jpg" alt="El Alma de Ceniza.">
-              <figcaption>El último Guardián de la Llama será la prueba final para el Campeón de Ceniza.</figcaption>
-            </figure>
-          </div>
-          <button class="flecha izquierda" onclick="cambiarSlide(-1)">&#10094;</button>
-          <button class="flecha derecha" onclick="cambiarSlide(1)">&#10095;</button>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
         </div>
-      </section>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video class="d-block w-100" controls>
+              <source src="./img/DARK SOULS 3 - Opening Cinematic.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/visions-of-rest.jpg" class="d-block w-100" alt="Hoguera del Santuario del Enlace.">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/dark_souls_3_vordt_of_the_boreal.jpg" class="d-block w-100" alt="Vordt del Valle Boreal en batalla.">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/lords-of-cinder.webp" class="d-block w-100" alt="Los Señores de Ceniza.">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/soulofciner.jpg" class="d-block w-100" alt="El Alma de Ceniza.">
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
 
       <section id="galeria">
         <h2>Dark Souls: Comienzos y Precursores</h2>
@@ -67,7 +80,8 @@
         <p>Pero todo esto es cosa pasada, apenas un pequeño vistazo a los eventos que representan el inicio de esta tanto atrapante como escalofriante historia que es la de Dark Souls.</p>
         <img class="index-img" src="./img/Dark-souls.webp" alt="El Campeón de Ceniza.">
       </section>
-
+  </div>
+  <div>
     <footer>
       <p class="p2">¡Unite a nuestras redes sociales!</p>
       <div class="footer-socials">
@@ -79,44 +93,6 @@
       <p class="p2">&copy; 2025 Dark Tales III. Todos los derechos reservados.</p>
     </footer>
   </div>
-
-  <script>
-    let indiceActual = 0;
-    const slides = document.getElementById("slides");
-    const totalSlides = slides.children.length;
-    const videoSlide = document.getElementById("video-slide");
-
-    let intervaloCarrusel;
-
-    function cambiarSlide(direccion) {
-      if (!videoSlide.paused) {
-        return;
-      }
-      indiceActual += direccion;
-      if (indiceActual < 0) indiceActual = totalSlides - 1;
-      if (indiceActual >= totalSlides) indiceActual = 0;
-
-      slides.style.transform = `translateX(-${indiceActual * 20}%)`;
-    }
-
-    function iniciarCarrusel() {
-      intervaloCarrusel = setInterval(() => {
-        if (!videoSlide.paused) {
-          return;
-        }
-        cambiarSlide(1);
-      }, 5000);
-    }
-
-    videoSlide.addEventListener('play', () => {
-      clearInterval(intervaloCarrusel);
-    });
-
-    videoSlide.addEventListener('pause', () => {
-      iniciarCarrusel();
-    });
-
-    iniciarCarrusel();
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
