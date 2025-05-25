@@ -46,18 +46,20 @@
             margin: 20px auto;
             padding: 15px;
             background-color: rgba(0, 0, 0, 0.7);
-        }
-        h2 {
-        font-size: 1.5em;
-        }
-        p {
-        font-size: 1em;
-        }
-        .index-img {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            margin: 0 auto;
+            flex-direction: column;
+            text-align: center;
+            h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .index-img {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                margin: 0 auto;
+            }
         }
     }
 }
