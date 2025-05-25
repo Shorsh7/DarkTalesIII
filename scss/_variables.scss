@@ -15,6 +15,27 @@
     src: url(../font/pirata_one/PirataOne.ttf);
 }
 
+/* Body variable */
+
+$background-color: #111;
+$background-image: url(../img/Irithyll_del_Valle_Boreal.jpg);
+$text-color: #fff;
+$font-main: 'Georgia', serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    background-image: $background-image;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $text-color;
+    font-family: $font-main;
+    text-align: center;
+}
+
 /* Mixin mobile */
 
 @mixin mobile {
