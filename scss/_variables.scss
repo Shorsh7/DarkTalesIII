@@ -1,0 +1,24 @@
+/* Fonts */
+
+@font-face {
+    font-family: "optimusprinceps";
+    src: url(../font/optimusprinceps/OptimusPrinceps.ttf);
+}
+
+@font-face {
+    font-family: "enchantedland";
+    src: url(../font/enchanted_land/enchantedland.otf);
+}
+
+@font-face {
+    font-family: "pirataone";
+    src: url(../font/pirata_one/PirataOne.ttf);
+}
+
+/* Mixin mobile */
+
+@mixin mobile {
+    @media screen and (min-width: 475px) and (max-width: 767px) {
+        @content
+    }
+}
