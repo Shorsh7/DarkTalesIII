@@ -1058,3 +1058,24 @@
 
     .prev { left: 5px; }
     .next { right: 5px; }
+
+    /* Loader */
+
+#loader img {
+        width: 100px;
+        margin-bottom: 15px;
+    }
+
+    #loader p {
+        font-size: 1em;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .spinner {
+        width: 30px;
+        height: 30px;
+        border: 3px solid #666;
+        border-top: 3px solid orange;
+    }
