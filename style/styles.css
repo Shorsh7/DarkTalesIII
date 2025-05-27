@@ -769,6 +769,8 @@
             .prev { left: 10px; }
             .next { right: 10px; }
 
+            /* Different cursor while hovering specific items */
+
             img:hover,
             select:hover,
             a:hover,
@@ -1027,3 +1029,32 @@
         padding: 12px;
     }
 }
+
+    .modal-content {
+        max-width: 95%;
+        max-height: 70vh;
+        border: 3px solid #f2f2f2;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(250, 250, 250, 0.6);
+    }
+
+    #caption {
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+
+    .close {
+        right: 20px;
+        top: 10px;
+        font-size: 2.5em;
+        padding: 12px;
+    }
+
+    .prev, .next {
+        font-size: 1.8em;
+        padding: 12px;
+    }
+
+    .prev { left: 5px; }
+    .next { right: 5px; }
