@@ -9,7 +9,7 @@
 }
 
 h1 {
-    font-family: 'optimusprinceps', serif;
+    font-family: $customfont1;
     text-align: center;
     margin-bottom: 30px;
     font-size: 50px;
@@ -19,7 +19,7 @@ h1 {
 .form-container {
     width: 100%;
     max-width: 800px;
-    font-family: "optimusprinceps", serif;
+    font-family: $customfont1;
     background-color: rgba(0, 0, 0, 0.75);
     padding: 30px;
     border-radius: 8px;
@@ -52,7 +52,7 @@ h1 {
             outline: none;
             }
         button {
-            font-family: "optimusprinceps", serif;
+            font-family: $customfont1;
             background-color: rgba(0, 0, 0, 0.4);
             color: #fff;
             padding: 10px 20px;
