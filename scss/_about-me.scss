@@ -34,7 +34,9 @@
             color: #c2bebe;
         }
     }
-    @include mobile {
+}
+
+@include mobile {
         .title-about-me {
             grid-row: 3;
             text-align: center;
@@ -62,4 +64,3 @@
             }
         }
     }
-}
