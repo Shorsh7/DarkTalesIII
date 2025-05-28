@@ -134,7 +134,7 @@ header .h3-header {
   font-weight: 800;
 }
 
-@media screen and (min-width: 475px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -255,7 +255,7 @@ footer .footer-img {
   max-height: 30px;
   align-items: center;
 }
-@media screen and (min-width: 475px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   footer footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -273,7 +273,7 @@ footer .footer-img {
 
 .about-container {
   max-width: 50%;
-  margin: 50px auto;
+  margin: 60px auto 50px;
   padding: 20px;
   border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.75);
@@ -282,7 +282,6 @@ footer .footer-img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
   flex-wrap: wrap;
 }
 .about-container h2 {
@@ -304,32 +303,31 @@ footer .footer-img {
   width: 680px;
   height: auto;
   margin-top: 30px;
-  border: 4px solid;
-  border-color: #ada9a9;
+  border: 4px solid #ada9a9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-@media screen and (min-width: 475px) and (max-width: 767px) {
-  .about-container .about-container {
-    width: 100%;
-    max-width: 100%;
-    margin: 20px auto;
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .about-container {
+    max-width: 95%;
     padding: 15px;
-    background-color: rgba(0, 0, 0, 0.7);
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
-  .about-container .about-container h2 {
-    font-size: 1.5em;
+  .about-container h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
   }
-  .about-container .about-container p {
+  .about-container p {
     font-size: 1em;
+    text-align: justify;
   }
-  .about-container .about-container .index-img {
+  .about-container .index-img {
     width: 100%;
-    height: auto;
     max-width: 100%;
-    margin: 0 auto;
+    margin-top: 20px;
+    height: auto;
   }
 }
 
@@ -399,8 +397,8 @@ footer .footer-img {
   border-radius: 5px;
   margin-left: 100px;
 }
-@media screen and (min-width: 475px) and (max-width: 767px) {
-  .about-container .about-container {
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .about-container {
     width: 100%;
     max-width: 100%;
     margin: 20px auto;
@@ -409,38 +407,38 @@ footer .footer-img {
     flex-direction: column;
     text-align: center;
   }
-  .about-container .about-container .about-image {
+  .about-container .about-image {
     max-width: 60%;
     margin: 0 auto;
   }
-  .about-container .about-container .about-text {
+  .about-container .about-text {
     margin-left: 0;
     margin-top: 15px;
     text-align: justify;
   }
-  .about-container .about-container p {
+  .about-container p {
     font-size: 1em;
   }
-  .about-container .about-container h2 {
+  .about-container h2 {
     font-size: 1.5em;
   }
-  .about-container .about-container h3 {
+  .about-container h3 {
     font-size: 1.2em;
   }
-  .about-container .about-container .lore-img, .about-container .about-container .lore-img-2 {
+  .about-container .lore-img, .about-container .lore-img-2 {
     width: 100%;
     height: auto;
     max-width: 100%;
     margin: 0 auto;
   }
-  .about-container .about-container .lore-img-2 {
+  .about-container .lore-img-2 {
     margin-left: 0;
   }
 }
 
 .about-container {
   max-width: 50%;
-  margin: 50px auto;
+  margin: 60px auto 50px;
   padding: 20px;
   border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.75);
@@ -449,7 +447,6 @@ footer .footer-img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
   flex-wrap: wrap;
 }
 .about-container .galeria {
@@ -459,6 +456,7 @@ footer .footer-img {
   padding: 20px;
   max-width: 900px;
   margin: 0 auto;
+  width: 100%;
 }
 .about-container .galery-img {
   width: 100%;
@@ -473,29 +471,27 @@ footer .footer-img {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 475px) and (max-width: 767px) {
-  .about-container .about-container {
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .about-container {
     width: 100%;
     max-width: 100%;
     margin: 20px auto;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.7);
-    flex-direction: column;
-    text-align: center;
   }
-  .about-container .about-container .galeria {
+  .about-container .galeria {
     grid-template-columns: 1fr;
     padding: 10px;
     gap: 15px;
   }
-  .about-container .about-container .galery-img {
+  .about-container .galery-img {
     width: 100%;
     height: auto;
     max-width: 100%;
     margin: 0 auto;
   }
 }
-
 .title-about-me {
   margin-top: 25px;
   margin-bottom: -20px;
@@ -503,7 +499,7 @@ footer .footer-img {
 
 .about-container {
   max-width: 50%;
-  margin: 50px auto;
+  margin: 60px auto;
   padding: 20px;
   border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.75);
@@ -533,34 +529,36 @@ footer .footer-img {
   font-size: 1.25em;
   color: #c2bebe;
 }
-@media screen and (min-width: 475px) and (max-width: 767px) {
-  .about-container .title-about-me {
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  .about-container .about-image {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .about-container .about-text {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .about-container .about-text p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .title-about-me {
     grid-row: 3;
     text-align: center;
     margin-bottom: 0;
     font-size: 1.62em;
   }
-  .about-container .about-container {
-    width: 100%;
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  .about-container .about-container .about-image {
-    max-width: 60%;
-    margin: 0 auto;
-  }
-  .about-container .about-container .about-text {
-    margin-left: 0;
-    margin-top: 15px;
-    text-align: justify;
-  }
-  .about-container .about-container .about-text p {
-    font-size: 1em;
-  }
 }
-
 .body-centered {
   margin: 0;
   padding: 0;
@@ -633,7 +631,7 @@ h1 {
   transition: all 0.3s ease;
   border-radius: 12px;
 }
-@media screen and (min-width: 475px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .form-container h1 {
     font-size: 1.8em;
   }
@@ -746,7 +744,7 @@ h1 {
   right: 10px;
 }
 
-@media screen and (min-width: 475px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .modal-content {
     max-width: 95%;
     max-height: 70vh;
@@ -835,7 +833,7 @@ h1 {
     transform: translateY(-20px);
   }
 }
-@media screen and (min-width: 475px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .toast {
     top: 10px;
     right: 10px;
@@ -889,7 +887,7 @@ h1 {
     transform: rotate(360deg);
   }
 }
-@media screen and (min-width: 475px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   #loader img {
     width: 100px;
     margin-bottom: 15px;
@@ -961,7 +959,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (min-width: 475px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   #demo.carousel #demo.carousel {
     max-width: 100%;
     margin: 0 auto;
@@ -997,7 +995,7 @@ h1 {
 .boton-volver .icono:hover {
   background-color: #555;
 }
-@media screen and (min-width: 475px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .boton-volver .boton-volver {
     bottom: 10px;
     right: 10px;
@@ -1060,7 +1058,7 @@ h1 {
   transition: all 0.3s ease;
   border-radius: 12px;
 }
-@media screen and (min-width: 475px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .form-container .form-container {
     width: 90%;
     max-width: 100%;

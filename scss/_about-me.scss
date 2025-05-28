@@ -5,7 +5,7 @@
 
 .about-container {
     max-width: 50%;
-    margin: 50px auto;
+    margin: 60px auto;
     padding: 20px;
     border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.75);
@@ -34,33 +34,33 @@
             color: #c2bebe;
         }
     }
-}
-
-@include mobile {
-        .title-about-me {
-            grid-row: 3;
-            text-align: center;
-            margin-bottom: 0;
-            font-size: 1.62em;
+    
+    @include mobile {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    .about-image {
+        max-width: 80%;
+        margin: 0 auto;
         }
-
-        .about-container {
-            width: 100%;
-            max-width: 100%;
-            margin: 20px auto;
-            padding: 15px;
-            background-color: rgba(0, 0, 0, 0.7);
-            .about-image {
-                max-width: 60%;
-                margin: 0 auto;
-            }
-            .about-text {
-                margin-left: 0;
-                margin-top: 15px;
-                text-align: justify;
-                p {
-                    font-size: 1em;
-                }
-            }
+        .about-text {
+        margin-left: 0;
+        margin-top: 15px;
+        p {
+            font-size: 1em;
+        }
         }
     }
+    }
+    @include mobile {
+    .title-about-me {
+        grid-row: 3;
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 1.62em;
+    }
+}
+

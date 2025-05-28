@@ -1,6 +1,6 @@
 .about-container {
     max-width: 50%;
-    margin: 50px auto;
+    margin: 60px auto 50px;
     padding: 20px;
     border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.75);
@@ -9,8 +9,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
     flex-wrap: wrap;
+
     h2 {
         font-family: $customfont1;
         text-align: center;
@@ -24,42 +24,45 @@
         0 0 40px rgba(255, 255, 255, 0.2);
         transition: text-shadow 0.5s ease-in-out;
     }
+
     p {
         text-align: justify;
         font-family: $customfont2;
         font-size: 1.25em;
         color: #c2bebe;
     }
+
     .index-img {
         width: 680px;
         height: auto;
         margin-top: 30px;
-        border: 4px solid;
-        border-color: #ada9a9;
+        border: 4px solid #ada9a9;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
+
     @include mobile {
-        .about-container {
-            width: 100%;
-            max-width: 100%;
-            margin: 20px auto;
-            padding: 15px;
-            background-color: rgba(0, 0, 0, 0.7);
-            flex-direction: column;
-            text-align: center;
-            h2 {
-                font-size: 1.5em;
-            }
-            p {
-                font-size: 1em;
-            }
-            .index-img {
-                width: 100%;
-                height: auto;
-                max-width: 100%;
-                margin: 0 auto;
-            }
+        max-width: 95%;
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+        }
+
+        p {
+        font-size: 1em;
+        text-align: justify;
+        }
+
+        .index-img {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+        height: auto;
         }
     }
 }
