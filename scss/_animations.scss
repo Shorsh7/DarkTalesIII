@@ -1,4 +1,4 @@
-    /* Toast */
+/* Toast */
 
 .toast {
     display: flex;
@@ -18,15 +18,31 @@
     transition: opacity 0.5s ease-in-out;
     z-index: 1000;
     box-shadow: 0 0 10px #000;
+
+    .toast-img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    &.show {
+        opacity: 1;
+        pointer-events: auto;
+        animation: fadeIn 1s forwards;
+    }
+
+    &.fade-out {
+        animation: fadeOut 1s forwards;
+        pointer-events: none;
+    }
+
+    &.hidden {
+        display: none;
+    }
 }
 
-.toast-img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
+// Animaciones globales
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -38,19 +54,31 @@
     }
 }
 
-@include mobile {
-    .toast {
-        top: 10px;
-        right: 10px;
-        font-size: 0.9em;
-        padding: 12px 16px;
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
     }
-
-    .toast-img {
-        width: 30px;
-        height: 30px;
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
     }
 }
+
+    @include mobile {
+        .toast {
+            top: 10px;
+            right: 10px;
+            font-size: 0.9em;
+            padding: 12px 16px;
+        }
+
+        .toast-img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
 
     /* Loader */
 

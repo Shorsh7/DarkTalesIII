@@ -1,0 +1,10 @@
+img:hover,
+select:hover,
+a:hover,
+button:hover {
+    cursor: url(../img/sword-icon.png), auto;
+}
+
+@media (max-width: 767px) {
+    .close, .prev, .next { font-size: 1.5em; }
+}
