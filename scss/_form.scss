@@ -1,7 +1,7 @@
 .form-container {
     width: 100%;
     max-width: 800px;
-    font-family: "optimusprinceps", serif;
+    font-family: $customfont1;
     background-color: rgba(0, 0, 0, 0.75);
     padding: 30px;
     border-radius: 8px;
@@ -51,6 +51,12 @@
             transition: all 0.3s ease;
             border-radius: 12px;
         }
+    @include mobile {
+        h1 {
+            font-size: 1em;
+            text-shadow: none;
+        }
+    }
     @include mobile {
         .form-container {
             width: 90%;
