@@ -19,6 +19,7 @@
         max-width: 900px;
         margin: 0 auto;
         width: 100%;
+        font-family: $customfont1;
     }
 
     .galery-img {
@@ -56,6 +57,11 @@
             height: auto;
             max-width: 100%;
             margin: 0 auto;
+            }
+
+            figcaption {
+                font-family: $customfont1;
+                font-size: 1.125em;
             }
         }
 }

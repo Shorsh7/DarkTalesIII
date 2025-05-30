@@ -473,6 +473,7 @@ h1 {
   max-width: 900px;
   margin: 0 auto;
   width: 100%;
+  font-family: "optimusprinceps", serif;
 }
 .about-container .galery-img {
   width: 100%;
@@ -506,6 +507,10 @@ h1 {
     height: auto;
     max-width: 100%;
     margin: 0 auto;
+  }
+  .about-container figcaption {
+    font-family: "optimusprinceps", serif;
+    font-size: 1.125em;
   }
 }
 .title-about-me {
