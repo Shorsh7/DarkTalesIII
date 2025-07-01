@@ -11,6 +11,27 @@
   <meta name="keywords" content="Dark-Tales-3, Dark-souls, Dark-souls-3, Dark-souls-III, Lore, Souls-like, Miyazaki, From-Software, Videojuegos">
   <meta name="author" content="Jorge Fracalossi Martínez">
 </head>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const myCarousel = document.querySelector('#demo');
+    const carousel = bootstrap.Carousel.getOrCreateInstance(myCarousel);
+    const video = myCarousel.querySelector('video');
+
+    if (video) {
+      video.addEventListener('play', function () {
+        carousel.pause();
+      });
+
+      video.addEventListener('pause', function () {
+        carousel.cycle();
+      });
+
+      video.addEventListener('ended', function () {
+        carousel.cycle();
+      });
+    }
+  });
+</script>
 <body>
     <div id="loader">
       <img src="./img/movingbonfire_transparent.gif" alt="Hoguera de Dark Souls" />
@@ -27,6 +48,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Inicio</a></li>
             <li><a class="dropdown-item" href="./pages/lore.html">Lore</a></li>
+            <li><a class="dropdown-item" href="./pages/characters.html">Personajes</a></li>
             <li><a class="dropdown-item" href="./pages/galery.html">Galería</a></li>
             <li><a class="dropdown-item" href="./pages/about-me.html">Sobre mí</a></li>
             <li><a class="dropdown-item" href="./pages/contact.html">Contacto</a></li>
@@ -39,7 +61,7 @@
     <main>
       <section id="inicio">
 
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div id="demo" class="carousel slide">
 
         <!-- Indicators -->
         <div class="carousel-indicators">

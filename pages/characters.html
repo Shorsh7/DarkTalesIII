@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes: Actores necesarios de una historia oscura</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../img/bonfire.png" type="image/png">
+    <meta name="description" content="Lista detallada de cada personaje principal y sub personaje importante de la historia retorcida y oscura de Dark Souls III.">
+    <meta name="keywords" content="Lore, Dark-souls-3, Dark-souls-III, Señores-de-Ceniza, Ashen-One, Elegido-de-Ceniza, Firekeeper, Aldrich, Yhorm, Lothric, Lorian, Sulyvahn, Gundyr, Vigilantes-del-Abismo, Alma-de-Ceniza">
+    <meta name="author" content="Jorge Fracalossi Martínez">
+</head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.querySelector('.personajes-grid');
+            if (!grid) return;
+
+            // Obtener los links como array
+            const links = Array.from(grid.querySelectorAll('a'));
+
+            // Ordenar por texto (ignora mayúsculas/minúsculas)
+            links.sort((a, b) => a.textContent.localeCompare(b.textContent, undefined, { sensitivity: 'base' }));
+
+            // Vaciar el contenedor
+            grid.innerHTML = '';
+
+            // Reinsertar los links ordenados
+            links.forEach(link => grid.appendChild(link));
+        });
+    </script>
+<body>
+    <div>
+        <header class="container">
+        <h1 class="title"><a href="../index.html">Dark Tales III</a></h1>
+        <nav class="dropdown-row">
+            <div class="dropdown-center">
+            <button class="dropdown-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                <li><a class="dropdown-item" href="./lore.html">Lore</a></li>
+                <li><a class="dropdown-item" href="#">Personajes</a></li>
+                <li><a class="dropdown-item" href="./galery.html">Galería</a></li>
+                <li><a class="dropdown-item" href="./about-me.html">Sobre mí</a></li>
+                <li><a class="dropdown-item" href="./contact.html">Contacto</a></li>
+            </ul>
+            </div>
+        </nav>
+        </header>
+    </div>
+
+        <h1>Personajes: Actores necesarios</h1>
+
+        <section class="personajes-section">
+            <div class="personajes-grid">
+                <a href="personajes/ashen-one.html">Ashen One</a>
+                <a href="personajes/firekeeper.html">Guardiana de Fuego</a>
+                <a href="personajes/ludleth.html">Ludleth de Courland</a>
+                <a href="personajes/gundyr.html">Iudex Gundyr</a>
+                <a href="personajes/greirat.html">Greirat de Asentamiento de los No Muertos</a>
+                <a href="personajes/aldritch.html">Aldrich, Devorador de Dioses</a>
+                <a href="personajes/yhorm.html">Yhorm el Gigante</a>
+                <a href="personajes/lothric.html">Joven Príncipe Lothric</a>
+                <a href="personajes/lorian.html">Príncipe Lorian</a>
+                <a href="personajes/soul-of-cinder.html">Alma de Ceniza</a>
+                <a href="personajes/pontiff-sulyvahn.html">Pontífice Sulyvahn</a>
+                <a href="personajes/deacons-of-the-deep.html">Diáconos de las Profundidades</a>
+                <a href="personajes/nameless-king.html">Rey Sin Nombre</a>
+                <a href="personajes/ancient-wyvern.html">Wyvern Antiguo</a>
+                <a href="personajes/crystal-sage.html">Sabio de Cristal</a>
+                <a href="personajes/old-demon-king.html">Viejo Rey Demonio</a>
+                <a href="personajes/vordt-of-the-boreal-valley">Vordt del Valle Boreal</a>
+                <a href="personajes/dancer-of-the-boreal-valley">Bailarina del Valle Boreal</a>
+                <a href="personajes/champion-gundyr.html">Campeón Gundyr</a>
+                <a href="personajes/oceiros-the-consumed-king.html">Oceiros, el Rey Consumido</a>
+                <a href="personajes/great-rotten-tree.html">Gran Árbol Corrompido</a>
+                <a href="personajes/great-lord-wolnir.html">Gran Señor Wolnir</a>
+            </div>
+        </section>
+    </div>
+        <footer>
+            <p class="p2">¡Unite a nuestras redes sociales!</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/shorsh.exe/profilecard/?igsh=MjJxNTRjdzZiZWty"><img class="footer-img" src="../img/ig-logo.png" alt="Instagram"></a>
+                <a href="https://x.com/ShorshtheWolf"><img class="footer-img" src="../img/x-logo.png" alt="X"></a>
+                <a href="https://www.youtube.com/@Shorsh."><img class="footer-img" src="../img/yt-logo.png" alt="YouTube"></a>
+                <a href="https://www.twitch.tv/lifeofshorsh"><img class="footer-img" src="../img/tw-logo.png" alt="Twitch"></a>
+            </div>
+            <p class="p2">&copy; 2025 Dark Tales III. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
