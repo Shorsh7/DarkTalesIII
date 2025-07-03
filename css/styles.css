@@ -1162,6 +1162,10 @@ body {
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
+body {
+  background-image: url(../img/gundyr-location.jpg);
+}
+
 .character-container {
   display: grid;
   grid-template-columns: 1fr 400px;
