@@ -1162,21 +1162,18 @@ body {
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
-body {
-  background-image: url(../img/gundyr-location.jpg);
-}
-
 .character-container {
-  display: grid;
-  grid-template-columns: 1fr 400px;
-  gap: 30px;
   max-width: 80%;
   margin: 60px auto 50px;
   padding: 20px;
   border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-  align-items: start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .character-container p {
   font-family: "optimusprinceps", serif;
@@ -1185,7 +1182,7 @@ body {
   margin-left: 0;
   margin-top: 0;
   margin-bottom: auto;
-  max-width: 100%;
+  max-width: 60%;
   text-align: justify;
 }
 .character-container .quote-p {
@@ -1193,19 +1190,24 @@ body {
   max-width: 40%;
   margin-right: 40%;
   margin-left: 10%;
+  margin-top: 30px;
 }
 .character-container .h-boss {
   font-family: "optimusprinceps", serif;
-  font-size: 3m;
+  font-size: 2em;
   font-weight: 700;
   width: 100%;
+  max-width: 60%;
   margin-left: 0 0 20px 0;
-  margin-top: 2%;
-  text-align: left;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: start;
 }
 .character-container .boss-card {
   max-width: 400px;
+  margin-left: auto;
   margin-right: 0;
+  margin-top: -500px;
   background-color: rgba(0, 0, 0, 0.6);
   border: 2px solid #555;
   border-radius: 10px;
