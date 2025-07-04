@@ -452,6 +452,10 @@ h1 {
   }
 }
 
+body {
+  background-image: url(../img/Irithyll_del_Valle_Boreal.jpg);
+}
+
 .about-container {
   max-width: 50%;
   margin: 60px auto 50px;
@@ -580,6 +584,10 @@ h1 {
     font-size: 1em;
   }
 }
+body {
+  background-image: url(../img/Irithyll_del_Valle_Boreal.jpg);
+}
+
 .body-centered {
   margin: 0;
   padding: 0;
@@ -1026,6 +1034,10 @@ h1 {
   }
 }
 
+body {
+  background-image: url(../img/Irithyll_del_Valle_Boreal.jpg);
+}
+
 .form-container {
   width: 100%;
   max-width: 800px;
@@ -1198,16 +1210,56 @@ body {
   font-weight: 700;
   width: 100%;
   max-width: 60%;
-  margin-left: 0 0 20px 0;
+  margin-left: 0;
   margin-bottom: 30px;
   margin-top: 30px;
   text-align: start;
+}
+.character-container .h2-boss {
+  font-family: "optimusprinceps", serif;
+  font-size: 2em;
+  font-weight: 700;
+  width: 100%;
+  max-width: 60%;
+  margin-left: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: start;
+}
+.character-container .souls-table {
+  border-collapse: collapse;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #f2f2f2;
+  margin-left: 10%;
+  margin-top: -10%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+}
+.character-container .souls-table th,
+.character-container .souls-table td {
+  border: 1px solid #857f7f;
+  border-radius: 2px;
+  padding: 10px 15px;
+  text-align: center;
+}
+.character-container .souls-table th {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #f0f0f0;
+  font-weight: bold;
+  border: 1px solid #4b4848;
+}
+.character-container .souls-table td:first-child {
+  font-weight: bold;
+}
+.character-container .souls-table td {
+  background-color: rgba(54, 52, 52, 0.6);
 }
 .character-container .boss-card {
   max-width: 400px;
   margin-left: auto;
   margin-right: 0;
-  margin-top: -500px;
+  margin-top: -600px;
   background-color: rgba(0, 0, 0, 0.6);
   border: 2px solid #555;
   border-radius: 10px;
