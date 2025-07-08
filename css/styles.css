@@ -1251,6 +1251,31 @@ body {
   margin-top: 30px;
   text-align: start;
 }
+.character-container .boss-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.character-container .boss-list {
+  list-style: none;
+  padding-left: 0;
+  margin-right: 900px;
+  font-family: "optimusprinceps", serif;
+  font-size: 1.1em;
+  color: #f0f0f0;
+  max-width: 700px;
+  text-align: left;
+}
+.character-container .boss-list li {
+  background: url(../img/bonfire-img.png) no-repeat left center;
+  background-size: 20px 20px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-family: "optimusprinceps", serif;
+  font-size: 1.1em;
+  color: #f0f0f0;
+  line-height: 1.4;
+}
 .character-container .souls-table {
   border-collapse: collapse;
   width: auto;
@@ -1287,7 +1312,7 @@ body {
   max-width: 400px;
   margin-left: auto;
   margin-right: 0;
-  margin-top: -720px;
+  margin-top: -2200px;
   background-color: rgba(0, 0, 0, 0.6);
   border: 2px solid #555;
   border-radius: 10px;
@@ -1342,6 +1367,23 @@ body {
 .character-container .defense-grid ul {
   padding-left: 18px;
   margin-top: 5px;
+}
+.character-container .main-boss-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 550px;
+}
+.character-container .video-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.character-container video, .character-container iframe {
+  border: 2px solid rgb(43, 42, 41);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 /*# sourceMappingURL=styles.css.map */
