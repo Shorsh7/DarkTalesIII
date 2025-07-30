@@ -1308,6 +1308,9 @@ body {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
+.character-container .boss-card-1 {
+  margin-bottom: 1000px;
+}
 .character-container .boss-card {
   max-width: 400px;
   margin-left: auto;
