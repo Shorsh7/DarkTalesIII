@@ -1368,6 +1368,14 @@ body {
   padding-left: 18px;
   margin-top: 5px;
 }
+.character-container .defense-phase-title {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
 .character-container .main-boss-container {
   display: flex;
   justify-content: center;
