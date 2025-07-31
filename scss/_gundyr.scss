@@ -20,6 +20,13 @@
         max-width: 65%;
         text-align: justify;
     }
+    a {
+        text-decoration: none;
+        color: #a19898;
+    &:hover {
+        text-decoration: underline;
+    }
+    }
     .quote-p {
         text-align: center;
         max-width: 40%;

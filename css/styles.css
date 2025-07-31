@@ -1233,6 +1233,13 @@ body {
   max-width: 65%;
   text-align: justify;
 }
+.character-container a {
+  text-decoration: none;
+  color: #a19898;
+}
+.character-container a:hover {
+  text-decoration: underline;
+}
 .character-container .quote-p {
   text-align: center;
   max-width: 40%;
