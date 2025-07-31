@@ -1318,6 +1318,9 @@ body {
 .character-container .boss-card-1 {
   margin-bottom: 1000px;
 }
+.character-container .boss-card-2 {
+  margin-bottom: -400px;
+}
 .character-container .boss-card {
   max-width: 400px;
   margin-left: auto;
