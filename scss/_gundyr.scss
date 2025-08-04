@@ -10,6 +10,9 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    .special-p {
+        margin-bottom: 15px;
+    }
     p {
         font-family: $customfont1;
         font-size: 1em;
@@ -71,6 +74,8 @@
         }
 }
     .souls-table {
+        font-family: $customfont1;
+        font-size: 1.1em;
         border-collapse: collapse;
         width: auto;
         background-color: rgba(0, 0, 0, 0.6);
@@ -103,10 +108,13 @@
         }
         }
     .boss-card-1 {
-        margin-bottom: 1000px;
+        margin-bottom: 1200px;
     }
     .boss-card-2 {
         margin-bottom: -400px;
+    }
+    .boss-card-3 {
+        margin-bottom: 1800px;
     }
     .boss-card {
         max-width: 400px;
