@@ -1329,6 +1329,9 @@ body {
 .character-container .boss-card-3 {
   margin-bottom: 1800px;
 }
+.character-container .boss-card-4 {
+  margin-bottom: 500px;
+}
 .character-container .boss-card {
   max-width: 400px;
   margin-left: auto;
