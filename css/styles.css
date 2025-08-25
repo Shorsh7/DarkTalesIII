@@ -1226,6 +1226,18 @@ body {
 .character-container .special-p {
   margin-bottom: 15px;
 }
+.character-container .firekeeper-p {
+  text-decoration: underline;
+  font-style: italic;
+  margin-left: -950px;
+  margin-top: 100px;
+}
+.character-container .firekeeper-p-2 {
+  margin-left: 20px;
+  text-decoration: underline;
+  font-style: italic;
+  margin-top: 20px;
+}
 .character-container p {
   font-family: "optimusprinceps", serif;
   font-size: 1em;
@@ -1233,7 +1245,7 @@ body {
   margin-left: 0;
   margin-top: 0;
   margin-bottom: auto;
-  max-width: 65%;
+  max-width: 60%;
   text-align: justify;
 }
 .character-container a {
@@ -1334,6 +1346,13 @@ body {
 }
 .character-container .boss-card-5 {
   margin-bottom: 2400px;
+}
+.character-container .boss-card-6 {
+  margin-bottom: 450px;
+}
+.character-container .boss-card-7 {
+  margin-top: 0;
+  align-self: flex-start;
 }
 .character-container .boss-card {
   max-width: 400px;
