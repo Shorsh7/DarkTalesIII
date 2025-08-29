@@ -1354,6 +1354,12 @@ body {
   margin-top: 0;
   align-self: flex-start;
 }
+.character-container .boss-card-8 {
+  margin-bottom: 400px;
+}
+.character-container .boss-card-9 {
+  margin-bottom: 200px;
+}
 .character-container .boss-card {
   max-width: 400px;
   margin-left: auto;
