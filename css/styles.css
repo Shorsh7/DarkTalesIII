@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Fonts */
 @font-face {
   font-family: "optimusprinceps";
@@ -62,6 +63,9 @@ header .dropdown-row {
   position: relative;
   margin-top: 25px;
   margin-bottom: -30px;
+  /* Submenú oculto */
+  /* Mostrar submenú al pasar el mouse */
+  /* Estilo de enlaces del submenú */
 }
 header .dropdown-row:hover .dropdown-menu {
   display: block;
@@ -107,6 +111,36 @@ header .dropdown-row .dropdown-menu li {
 header .dropdown-row .dropdown-menu a {
   color: white;
   text-decoration: none;
+}
+header .dropdown-row .dropdown-submenu {
+  position: relative;
+}
+header .dropdown-row .sub-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%; /* aparece a la derecha */
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+  padding: 10px;
+  min-width: 180px;
+  z-index: 1100;
+  text-align: left;
+}
+header .dropdown-row .dropdown-submenu:hover .sub-menu {
+  display: block;
+}
+header .dropdown-row .sub-menu li {
+  margin: 5px 0;
+}
+header .dropdown-row .sub-menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+header .dropdown-row .sub-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* toque dorado Dark Souls */
 }
 header .h2-dark {
   grid-column: 2/5;
@@ -1299,6 +1333,15 @@ body {
   color: #f0f0f0;
   line-height: 1.4;
 }
+.character-container .boss-list .sub-li {
+  font-size: 0.9em;
+  list-style-type: disc;
+  background: none;
+}
+.character-container .souls-table-deacons td {
+  text-align: left;
+  font-size: 1em;
+}
 .character-container .souls-table {
   font-family: "optimusprinceps", serif;
   font-size: 1.1em;
@@ -1307,6 +1350,7 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid #f2f2f2;
   margin: 0 auto 30px 0;
+  margin-top: 10px;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
   border-radius: 2px;
 }
