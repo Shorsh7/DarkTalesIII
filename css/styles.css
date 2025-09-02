@@ -1325,7 +1325,7 @@ body {
 }
 .character-container .boss-list li {
   background: url(../img/bonfire-img.png) no-repeat left center;
-  background-size: 20px 20px;
+  background-size: 15px 15px;
   padding-left: 30px;
   margin-bottom: 10px;
   font-family: "optimusprinceps", serif;
