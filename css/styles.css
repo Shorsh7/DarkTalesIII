@@ -1264,6 +1264,7 @@ body {
 .character-container .firekeeper-p {
   text-decoration: underline;
   font-style: italic;
+  font-weight: 700;
   margin-left: -950px;
   margin-top: 100px;
 }
@@ -1271,6 +1272,7 @@ body {
   margin-left: 20px;
   text-decoration: underline;
   font-style: italic;
+  font-weight: 700;
   margin-top: 20px;
 }
 .character-container p {
@@ -1308,6 +1310,17 @@ body {
   margin-top: 30px;
   text-align: start;
 }
+.character-container .h-anri {
+  font-family: "optimusprinceps", serif;
+  font-size: 2em;
+  font-weight: 700;
+  width: 100%;
+  max-width: 80%;
+  margin-left: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: start;
+}
 .character-container .boss-container {
   display: flex;
   justify-content: flex-start;
@@ -1321,7 +1334,7 @@ body {
   font-size: 1.1em;
   color: #f0f0f0;
   max-width: 700px;
-  text-align: left;
+  text-align: justify;
 }
 .character-container .boss-list li {
   background: url(../img/bonfire-img.png) no-repeat left center;
@@ -1337,6 +1350,25 @@ body {
   font-size: 0.9em;
   list-style-type: disc;
   background: none;
+}
+.character-container .anri-list {
+  padding-left: 0;
+  margin-right: 1000px;
+  font-family: "optimusprinceps", serif;
+  font-size: 1em;
+  color: #f2f2f2;
+  max-width: 700px;
+  text-align: justify;
+}
+.character-container .anri-list li {
+  background: url(../img/bonfire-img.png) no-repeat left center;
+  background-size: 15px 15px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-family: "optimusprinceps", serif;
+  font-size: 1em;
+  color: #f2f2f2;
+  line-height: 1.4;
 }
 .character-container .souls-table-deacons td {
   text-align: left;
