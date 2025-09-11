@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #111;
-  background-image: url(../img/Irithyll_del_Valle_Boreal.jpg);
+  background-image: url(../img/Irithyll.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1261,13 +1261,6 @@ body {
 .character-container .special-p {
   margin-bottom: 15px;
 }
-.character-container .firekeeper-p {
-  text-decoration: underline;
-  font-style: italic;
-  font-weight: 700;
-  margin-left: -950px;
-  margin-top: 100px;
-}
 .character-container .firekeeper-p-2 {
   margin-left: 20px;
   text-decoration: underline;
@@ -1320,6 +1313,29 @@ body {
   margin-bottom: 30px;
   margin-top: 30px;
   text-align: start;
+}
+.character-container .dialogue-container {
+  max-width: 55%;
+  max-height: 4000px;
+  margin: 20px 0 20px 0;
+  margin-right: 400px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 12px;
+  overflow-y: auto;
+  column-count: 2;
+  column-gap: 0px;
+}
+.character-container .dialogue-container .dialogue-container p::first-letter {
+  font-size: 22px;
+  color: #ffcc00;
+  font-weight: bold;
+}
+.character-container .dialogue-container .dialogue-container p::first-letter .dialogue-container p {
+  text-align: justify;
+  text-align-last: center;
+  margin-bottom: 1em;
 }
 .character-container .boss-container {
   display: flex;

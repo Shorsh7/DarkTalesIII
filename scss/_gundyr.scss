@@ -14,13 +14,6 @@
     .special-p {
         margin-bottom: 15px;
     }
-    .firekeeper-p {
-        text-decoration: underline;
-        font-style: italic;
-        font-weight: 700;
-        margin-left: -950px;
-        margin-top: 100px;
-    }
     .firekeeper-p-2 {
         margin-left: 20px;
         text-decoration: underline;
@@ -73,6 +66,29 @@
         margin-bottom: 30px;
         margin-top: 30px;
         text-align: start;
+    }
+    .dialogue-container {
+        max-width: 55%;
+        max-height: 4000px;
+        margin: 20px 0 20px 0;
+        margin-right: 400px;
+        padding: 20px;
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+        border-radius: 12px;
+        overflow-y: auto;     
+        column-count: 2;       
+        column-gap: 0px;
+        .dialogue-container p::first-letter {
+            font-size: 22px;
+            color: #ffcc00;
+            font-weight: bold;
+        .dialogue-container p {
+            text-align: justify;
+            text-align-last: center;
+            margin-bottom: 1em;
+        }
+}     
     }
     .boss-container {
         display: flex;
