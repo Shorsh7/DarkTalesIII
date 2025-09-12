@@ -22,8 +22,8 @@
         margin-top: 20px;
     }
     p {
-        font-family: $customfont1;
-        font-size: 1em;
+        font-family: $customfont3;
+        font-size: 1.8em;
         margin-right: auto;
         margin-left: 0;
         margin-top: 0;
@@ -57,7 +57,7 @@
         text-align: start;
     }
     .h-anri {
-        font-family: $customfont1;
+        font-family: $customfont3;
         font-size: 2em;
         font-weight: 700;
         width: 100%;
@@ -68,6 +68,7 @@
         text-align: start;
     }
     .dialogue-container {
+        font-size: 0.8em;
         max-width: 55%;
         max-height: 4000px;
         margin: 20px 0 20px 0;
@@ -80,7 +81,7 @@
         column-count: 2;       
         column-gap: 0px;
         .dialogue-container p::first-letter {
-            font-size: 22px;
+            font-size: 1em;
             color: #ffcc00;
             font-weight: bold;
         .dialogue-container p {
@@ -99,8 +100,8 @@
         list-style: none;
         padding-left: 0;
         margin-right: 900px;
-        font-family: 'optimusprinceps', serif;
-        font-size: 1.1em;
+        font-family: $customfont3, serif;
+        font-size: 1em;
         color: #f0f0f0;
         max-width: 700px;
         text-align: justify;
@@ -109,12 +110,13 @@
             background-size: 15px 15px;
             padding-left: 30px;
             margin-bottom: 10px;
-            font-family: 'optimusprinceps', serif;
-            font-size: 1.1em;
+            font-family: $customfont3, serif;
+            font-size: 1.5em;
             color: #f0f0f0;
             line-height: 1.4;
         }
         .sub-li {
+            font-family: $customfont3;
             font-size: 0.9em;
             list-style-type: disc;
             background: none;
@@ -123,7 +125,7 @@
     .anri-list {
         padding-left: 0;
         margin-right: 1000px;
-        font-family: $customfont1;
+        font-family: $customfont3;
         font-size: 1em;
         color: #f2f2f2;
         max-width: 700px;
@@ -133,8 +135,8 @@
             background-size: 15px 15px;
             padding-left: 30px;
             margin-bottom: 10px;
-            font-family: $customfont1;
-            font-size: 1em;
+            font-family: $customfont3, serif;
+            font-size: 1.6em;
             color: #f2f2f2;
             line-height: 1.4;
         }
@@ -272,4 +274,95 @@
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
         }
+}
+
+@media (min-width: 375px) and (max-width: 1440px) {
+    .character-container {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 95%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .dialogue-container {
+        max-width: 100%;
+        margin-right: 0;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        column-count: 1;
+        font-size: 0.9em;
+    }
+
+    .boss-card {
+        position: relative;
+        top: unset;
+        right: unset;
+        margin-top: 20px;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .boss-list,
+    .anri-list {
+        margin-right: 0;
+        max-width: 90%;
+    }
+
+    .main-boss-container {
+        margin-left: 0;
+    }
+
+    p {
+        max-width: 100%;
+        font-size: 0.9em;
+    }
+
+    .h-boss,
+    .h-anri {
+        font-size: 1.3em;
+        max-width: 100%;
+        margin: 20px 0;
+        text-align: start;
+    }
+
+    .quote-p {
+        max-width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .souls-table {
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    .souls-table td,
+    .souls-table th {
+        padding: 8px;
+    }
+
+    .defense-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .defense-grid div {
+        width: 100%;
+    }
+
+    .boss-card h2 {
+        font-size: 1.2em;
+    }
+
+    .video-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    video,
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
 }
