@@ -1265,6 +1265,7 @@ body {
   margin-left: 20px;
   text-decoration: underline;
   font-style: italic;
+  text-align: justify;
   font-weight: 700;
   margin-top: 20px;
 }
@@ -1286,7 +1287,7 @@ body {
   text-decoration: underline;
 }
 .character-container .quote-p {
-  text-align: center;
+  text-align: justify;
   max-width: 40%;
   margin-right: 40%;
   margin-left: 10%;
