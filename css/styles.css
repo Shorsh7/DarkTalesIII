@@ -1510,6 +1510,42 @@ body {
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
 }
+.character-container .boss-card-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  perspective: 1200px;
+  width: 400px;
+  height: auto;
+  margin: 0;
+  z-index: 10;
+}
+.character-container .boss-card-inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  cursor: pointer;
+}
+.character-container .boss-card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+.character-container .boss-card {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #555;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+.character-container .card-front {
+  transform: rotateY(0deg);
+}
+.character-container .card-back {
+  transform: rotateY(180deg);
+}
 .character-container .main-boss-container {
   display: flex;
   justify-content: center;
