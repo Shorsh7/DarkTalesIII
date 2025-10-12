@@ -277,6 +277,7 @@
         
         .boss-card-inner {
         position: relative;
+        right: 20px;
         width: 100%;
         transform-style: preserve-3d;
         transition: transform 0.8s ease;
@@ -325,7 +326,7 @@
         }
 }
 
-@media (min-width: 375px) and (max-width: 1440px) {
+@include mobile {
     .character-container {
         flex-direction: column;
         align-items: flex-start;
